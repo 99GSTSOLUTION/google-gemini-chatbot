@@ -1,0 +1,27 @@
+{
+  "name": "google-gemini-chatbot",
+  "version": "1.0.0",
+  "description": "🚀 **Live Demo**: [Google Gemini Chatbot](https://google-gemini-chatbot-plum.vercel.app/)",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/99GSTSOLUTION/google-gemini-chatbot.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/99GSTSOLUTION/google-gemini-chatbot/issues"
+  },
+  "homepage": "https://github.com/99GSTSOLUTION/google-gemini-chatbot#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.3",
+    "express": "^5.2.1",
+    "node-fetch": "^3.3.2"
+  }
+}
