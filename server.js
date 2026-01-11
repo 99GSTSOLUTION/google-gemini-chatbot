@@ -80,15 +80,15 @@ app.post("/api/chat", async (req, res) => {
         const data = await response.json();
 
         // Debug log (very useful)
-        console.log("Gemini full response:", JSON.stringify(data, null, 2));
+        console.log("AI full response:", JSON.stringify(data, null, 2));
 
         if (data.error) {
-            console.error("Gemini API Error:", data.error);
+            console.error("AI API Error:", data.error);
             return res.status(500).json({ error: data.error.message });
         }
 
         if (!data.candidates || !data.candidates.length) {
-            return res.status(500).json({ error: "No response from Gemini" });
+            return res.status(500).json({ error: "No response from AI" });
         }
 
         const reply = data.candidates[0].content.parts[0].text;
